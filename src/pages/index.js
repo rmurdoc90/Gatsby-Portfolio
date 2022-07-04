@@ -23,25 +23,29 @@ export const query = graphql`
 
 export default function Home({ data }) {
   const strings = "string"
-  const jobs = data.allSanityJobs
+  let jobs = data.allSanityJobs.nodes
+  console.log(jobs)
+
   return (
     <div>
       <div>Data</div>
-      <div>{strings}</div>
+      <div>{strings} test</div>
       <div>
-        {jobs.nodes.forEach(item => {
-          console.log(item)
-          let name = item.companyName
-          return (
-            <div>
-              <h1>{name}</h1>
-              <h2>{item.jobTitle}</h2>
-              <p>{item.description}</p>
-              {item.techStack.forEach(tech => {
-                return <h4>{tech}</h4>
-              })}
-            </div>
-          )
+        {jobs.forEach(item => {
+          for (let key in item) {
+            console.log(`${key}: ${item[key]}`)
+            return (
+              <div>
+                <h2>{item.jobTitle}</h2>
+                <p>{item.description}</p>
+                {/* {item.techStack.forEach(tech => {
+                  return <h4>{tech}</h4>
+                })} */}
+              </div>
+            )
+          }
+          // console.log(item)
+          // let name = item.companyName
         })}
       </div>
     </div>
