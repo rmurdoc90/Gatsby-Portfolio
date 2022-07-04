@@ -1,5 +1,32 @@
 import React from "react"
 import { graphql } from "gatsby"
+import "./style.css"
+import Nav from "./components/nav"
+
+export default function Home({ data }) {
+  let job1 = data.allSanityJobs.nodes[0]
+  let job2 = data.allSanityJobs.nodes[1]
+
+  return (
+    <>
+      <Nav />
+      <div>
+        <h1>{job1.companyName}</h1>
+        <h2>{job1.jobTitle}</h2>
+        <h4>
+          {job1.startDate} - {job1.endDate}
+        </h4>
+        <p>{job1.description}</p>
+      </div>
+      <div>
+        <h1>{job2.companyName}</h1>
+        <h2>{job2.jobTitle}</h2>
+        <h4>{job2.startDate} - Present</h4>
+        <p>{job2.description}</p>
+      </div>
+    </>
+  )
+}
 
 export const query = graphql`
   {
@@ -20,34 +47,3 @@ export const query = graphql`
     }
   }
 `
-
-export default function Home({ data }) {
-  const strings = "string"
-  let jobs = data.allSanityJobs.nodes
-  console.log(jobs)
-
-  return (
-    <div>
-      <div>Data</div>
-      <div>{strings} test</div>
-      <div>
-        {jobs.forEach(item => {
-          for (let key in item) {
-            console.log(`${key}: ${item[key]}`)
-            return (
-              <div>
-                <h2>{item.jobTitle}</h2>
-                <p>{item.description}</p>
-                {/* {item.techStack.forEach(tech => {
-                  return <h4>{tech}</h4>
-                })} */}
-              </div>
-            )
-          }
-          // console.log(item)
-          // let name = item.companyName
-        })}
-      </div>
-    </div>
-  )
-}
