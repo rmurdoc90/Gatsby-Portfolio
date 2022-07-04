@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 function nav() {
   return (
     <nav className="flex-center sticky">
-      <div className="main-container nav">
+      <div className="nav">
         <Link to="/"> Home </Link>
 
         <div>

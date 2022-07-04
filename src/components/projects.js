@@ -1,10 +1,9 @@
 import React from "react"
-import { graphql } from "gatsby"
 
 function projects({ data }) {
   console.log(data)
-  let proj1 = data.allSanityProjects.nodes[0]
-  let proj2 = data.allSanityProjects.nodes[1]
+  let proj1 = data.nodes[0]
+  let proj2 = data.nodes[1]
 
   return (
     <section className="flex-center">
@@ -23,25 +22,3 @@ function projects({ data }) {
 }
 
 export default projects
-
-export const query = graphql`
-  {
-    allSanityProjects {
-      nodes {
-        projectName
-        projectSlug {
-          current
-        }
-        githubSlug {
-          current
-        }
-        techStack
-        projectImg {
-          asset {
-            url
-          }
-        }
-      }
-    }
-  }
-`

@@ -1,10 +1,9 @@
 import React from "react"
-import { graphql } from "gatsby"
 
 function jobs({ data }) {
   console.log(data)
-  let job1 = data.allSanityProjects.nodes[0]
-  let job2 = data.allSanityProjects.nodes[1]
+  let job1 = data.nodes[0]
+  let job2 = data.nodes[1]
 
   return (
     <section className="flex-center">
@@ -29,23 +28,3 @@ function jobs({ data }) {
 }
 
 export default jobs
-
-export const query = graphql`
-  {
-    allSanityJobs {
-      nodes {
-        companyName
-        description
-        startDate
-        endDate
-        techStack
-        jobTitle
-        projectImg {
-          asset {
-            url
-          }
-        }
-      }
-    }
-  }
-`
