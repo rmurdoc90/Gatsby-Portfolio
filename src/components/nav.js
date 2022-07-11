@@ -3,17 +3,28 @@ import { Link } from "gatsby"
 
 function nav() {
   return (
-    <nav className="flex-center sticky">
+    <nav className="">
       <div className="nav">
-        <Link to="/"> Home </Link>
-
-        <div>
-          <Link to="/"> Home </Link>
-          <Link to="/about"> About </Link>
-          <Link to="/projects"> Projects </Link>
-          <Link to="/experience"> Experience </Link>
-          <Link to="/contact"> Contact </Link>
-        </div>
+        <Link className="link flex-center-center" to="/">
+          {" "}
+          Home{" "}
+        </Link>
+        <Link className="link flex-center-center" to="/about">
+          {" "}
+          About{" "}
+        </Link>
+        <Link className="link flex-center-center" to="/projects">
+          {" "}
+          Projects{" "}
+        </Link>
+        <Link className="link flex-center-center" to="/experience">
+          {" "}
+          Experience{" "}
+        </Link>
+        <Link className="link flex-center-center" to="/contact">
+          {" "}
+          Contact{" "}
+        </Link>
       </div>
     </nav>
   )
