@@ -106,6 +106,7 @@ section {
 body {
   line-height: 1;
   font-size: 1em;
+  cursor: url("./imgs/1726072725_preview_Infinity\ Cursor.png"), auto;
 }
 ol,
 ul {
@@ -189,7 +190,7 @@ nav {
 .header-section {
   height: 100vh;
   width: 100%;
-  background-image: url("https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-image: url("./imgs/paul-volkmer-qVotvbsuM_c-unsplash.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -199,4 +200,14 @@ nav {
   width: 50%;
   height: 90vh;
   position: relative;
+}
+
+/* <--------------------Loader Styling-----------------------> */
+
+.loader-wrapper {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 100;
+  background-color: rgba(255, 228, 196, 0.149);
 }

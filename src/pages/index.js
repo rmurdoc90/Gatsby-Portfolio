@@ -5,11 +5,14 @@ import "../style.css"
 import Header from "../components/header"
 import Projects from "../components/projects"
 import Jobs from "../components/jobs"
+import Loader from "../components/loader"
 
 export default function Home({ data }) {
   console.log(data)
+
   return (
     <>
+      <Loader />
       <Header />
       <Projects data={data.allSanityProjects} />
       <Jobs data={data.allSanityJobs} />
