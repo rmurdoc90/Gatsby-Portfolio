@@ -224,4 +224,23 @@ nav {
   width: 100%;
 }
 
-/* <--------------------Experience Styling-----------------------> */
+/* <--------------------jobs Styling-----------------------> */
+
+.job-article {
+  width: 100%;
+  display: flex;
+  margin: 2rem 0;
+}
+.job-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+}
+.job-img {
+  width: 50%;
+}
+.job {
+  flex-wrap: wrap;
+  padding: 5%;
+}
