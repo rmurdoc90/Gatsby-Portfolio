@@ -1,6 +1,7 @@
 import React from "react"
 import img from "../imgs/lucas-calloch-P-yzuyWFEIk-unsplash.jpeg"
 import Nav from "../components/nav"
+
 function header() {
   return (
     <section className="header-section flex-center">

@@ -1,7 +1,7 @@
 import React from "react"
 
 function about() {
-  return <div>about</div>
+  return <section className="about" id="about"></section>
 }
 
 export default about

@@ -1,30 +1,40 @@
 import React from "react"
-import { Link } from "gatsby"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 function nav() {
   return (
     <nav className="">
       <div className="nav">
-        <Link className="link flex-center-center" to="/">
-          {" "}
-          Home{" "}
-        </Link>
-        <Link className="link flex-center-center" to="/about">
-          {" "}
-          About{" "}
-        </Link>
-        <Link className="link flex-center-center" to="/projects">
-          {" "}
-          Projects{" "}
-        </Link>
-        <Link className="link flex-center-center" to="/experience">
-          {" "}
-          Experience{" "}
-        </Link>
-        <Link className="link flex-center-center" to="/contact">
-          {" "}
-          Contact{" "}
-        </Link>
+        <button
+          onClick={() => scrollTo("#about")}
+          className="link flex-center-center"
+        >
+          About
+        </button>
+        <button
+          onClick={() => scrollTo("#projects")}
+          className="link flex-center-center"
+        >
+          Projects
+        </button>
+        <button
+          onClick={() => scrollTo("#jobs")}
+          className="link flex-center-center"
+        >
+          Experience
+        </button>
+        <button
+          onClick={() => scrollTo("#socials")}
+          className="link flex-center-center"
+        >
+          Socials
+        </button>
+        <button
+          onClick={() => scrollTo("#contact")}
+          className="link flex-center-center"
+        >
+          Contact
+        </button>
       </div>
     </nav>
   )

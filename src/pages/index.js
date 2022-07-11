@@ -6,16 +6,20 @@ import Header from "../components/header"
 import Projects from "../components/projects"
 import Jobs from "../components/jobs"
 import Loader from "../components/loader"
+import About from "../components/about"
+import Socials from "../components/socials"
+import Contact from "../components/contact"
 
 export default function Home({ data }) {
-  console.log(data)
-
   return (
     <>
       <Loader />
       <Header />
+      <About />
       <Projects data={data.allSanityProjects} />
       <Jobs data={data.allSanityJobs} />
+      <Socials />
+      <Contact />
     </>
   )
 }

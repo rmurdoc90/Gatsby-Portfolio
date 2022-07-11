@@ -6,7 +6,7 @@ function projects({ data }) {
   let proj2 = data.nodes[1]
 
   return (
-    <section className="flex-center">
+    <section className="flex-center projects" id="projects">
       <div className="main-container">
         <div>
           <h1>{proj1.projectName}</h1>

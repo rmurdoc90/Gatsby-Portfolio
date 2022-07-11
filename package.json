@@ -15,8 +15,10 @@
   },
   "dependencies": {
     "gatsby": "^4.17.2",
+    "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-image": "^2.17.0",
     "gatsby-plugin-sharp": "^4.17.0",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-source-filesystem": "^4.17.0",
     "gatsby-source-sanity": "^7.4.2",
     "gatsby-transformer-sharp": "^4.17.0",

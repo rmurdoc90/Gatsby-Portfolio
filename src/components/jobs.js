@@ -6,7 +6,7 @@ function jobs({ data }) {
   let job2 = data.nodes[1]
 
   return (
-    <section className="flex-center">
+    <section className="flex-center jobs" id="jobs">
       <div className="main-container">
         <div>
           <h1>{job1.companyName}</h1>
