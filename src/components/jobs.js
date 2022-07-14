@@ -18,8 +18,12 @@ function jobs({ data }) {
                   return <p>{item}</p>
                 })}
               </div>
-              <div className="job-img">
-                <img src={job.projectImg.asset.url} alt=" " />
+              <div className="job-img-div flex-center-center">
+                <img
+                  className="job-img"
+                  src={job.projectImg.asset.url}
+                  alt=" "
+                />
               </div>
             </article>
           )

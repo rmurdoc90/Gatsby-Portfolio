@@ -12,7 +12,7 @@ import Contact from "../components/contact"
 
 export default function Home({ data }) {
   return (
-    <>
+    <section className="site-wrapper">
       <Loader />
       <Header />
       <About />
@@ -20,7 +20,7 @@ export default function Home({ data }) {
       <Jobs data={data.allSanityJobs} />
       <Socials />
       <Contact />
-    </>
+    </section>
   )
 }
 
