@@ -1,5 +1,4 @@
-import React from "react"
-import { useEffect } from "react"
+import React, { useEffect } from "react"
 
 function Loader() {
   function loaderFade() {
@@ -10,7 +9,6 @@ function Loader() {
 
       function opacChange() {
         if (count >= 0) {
-          console.log(`In loop ${count}`)
           wrapper.style.filter = `opacity(${count}%)`
           count--
         } else {
@@ -19,13 +17,16 @@ function Loader() {
       }
     }, 3000)
   }
+
   useEffect(() => {
     loaderFade()
   })
 
   return (
     <div className="loader-wrapper flex-center-center" id="loader">
-      <div className="loader"></div>
+      <div className="loader">
+        <img src="../lottie/98955-hexagon-loading.json" alt="" />
+      </div>
     </div>
   )
 }
