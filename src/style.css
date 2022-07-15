@@ -211,7 +211,7 @@ nav {
   width: 100%;
   position: absolute;
   z-index: 100;
-  background-color: rgba(0, 128, 0, 0.153);
+  background-color: white;
 }
 .site-wrapper {
   position: relative;
