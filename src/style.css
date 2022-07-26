@@ -146,6 +146,9 @@ img {
 .flex {
   display: flex;
 }
+.vert {
+  flex-direction: column;
+}
 
 .main-container {
   align-items: center;
