@@ -7,7 +7,7 @@ import Projects from "../components/projects"
 import Jobs from "../components/jobs"
 import Loader from "../components/loader"
 import About from "../components/about"
-import Socials from "../components/socials"
+import Footer from "../components/footer"
 import Contact from "../components/contact"
 
 export default function Home({ data }) {
@@ -18,8 +18,8 @@ export default function Home({ data }) {
       <About />
       <Projects data={data.allSanityProjects} />
       <Jobs data={data.allSanityJobs} />
-      <Socials />
       <Contact />
+      <Footer />
     </section>
   )
 }

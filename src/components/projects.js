@@ -13,7 +13,11 @@ function projects({ data }) {
               <h2>{proj.githubSlug.current}</h2>
               <h2>{proj.projectSlug.current}</h2>
               {proj.techStack.map(item => {
-                return <p>{item}</p>
+                return (
+                  <button className="bg-slate-400/75 hover:bg-green-600 p-1 rounded text-xs mr-2">
+                    {item}
+                  </button>
+                )
               })}
             </div>
           )
