@@ -14,7 +14,7 @@ function projects({ data }) {
               <h2>{proj.projectSlug.current}</h2>
               {proj.techStack.map(item => {
                 return (
-                  <button className="bg-slate-400/75 hover:bg-green-600 p-1 rounded text-xs mr-2">
+                  <button className="bg-slate-400/75 hover:bg-green-600 py-1 px-2.5 rounded text-xs mr-2">
                     {item}
                   </button>
                 )

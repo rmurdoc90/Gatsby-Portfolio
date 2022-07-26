@@ -7,31 +7,31 @@ function nav() {
       <div className="nav">
         <button
           onClick={() => scrollTo("#about")}
-          className="link flex-center-center"
+          className="bg-slate-500 hover:bg-green-600 py-2 px-4 rounded text-sm"
         >
           About
         </button>
         <button
           onClick={() => scrollTo("#projects")}
-          className="link flex-center-center"
+          className="bg-slate-500 hover:bg-green-600 py-2 px-4 rounded text-sm"
         >
           Projects
         </button>
         <button
           onClick={() => scrollTo("#jobs")}
-          className="link flex-center-center"
+          className="bg-slate-500 hover:bg-green-600 py-2 px-4 rounded text-sm"
         >
           Experience
         </button>
         <button
           onClick={() => scrollTo("#socials")}
-          className="link flex-center-center"
+          className="bg-slate-500 hover:bg-green-600 py-2 px-4 rounded text-sm"
         >
           Socials
         </button>
         <button
           onClick={() => scrollTo("#contact")}
-          className="link flex-center-center"
+          className="bg-slate-500 hover:bg-green-600 py-2 px-4 rounded text-sm"
         >
           Contact
         </button>
